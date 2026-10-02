@@ -1,0 +1,196 @@
+<html>
+<head>
+    <title>Portfolio</title>
+</head>
+<body>
+<header>
+    <h1>PORTFOLIO</h1>
+</header>
+<nav>
+    <a href="https://m.media-amazon.com/images/I/61qbMx4oXJL.jpg">HOME</a>
+    <a href="https://static.vecteezy.com/system/resources/thumbnails/005/442/691/small/skills-learning-personal-development-finance-competency-business-concept-photo.jpg">SKILL</a>
+    <a href="https://thumbs.dreamstime.com/b/creative-education-wallpaper-educational-sketch-light-copybooks-knowledge-concept-162705943.jpg">EDUCATION</a>
+</nav>
+<section id="about">
+    <div class="profile-box">
+        <img src="myphoto.jpeg" class="profile">
+    </div>
+
+    <div class="about-content">
+        <h2>ABOUT ME</h2>
+
+        <center><h3>Mohanapriya G S</h3></center>
+
+        <p><b>COURSE:</b> MCA</p>
+        <p><b>COLLEGE:</b> STC, Pollachi</p>
+        <p><b>LOCATION:</b> Coimbatore, Tamil Nadu</p>
+        <p><b>SKILLS:</b> HTML, CSS, UI/UX, Python, Data Science</p>
+        <p><b>CAREER GOAL:</b> To become a successful IT professional</p>
+    </div>
+
+</section>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: lightblue;
+    font-family: Georgia, serif;
+    text-align: center;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    box-shadow: 0 5px 15px grey;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 35px;
+    letter-spacing: 3px;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 25px;
+}
+nav a {
+    background-color: white;
+    color: purple;
+    text-decoration: none;
+    padding: 15px 30px;
+    border: 2px solid purple;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+nav a:hover {
+    background-color: purple;
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px grey;
+}
+
+#about {
+    width: 85%;
+    margin: 30px auto;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+    align-items: center;
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px grey;
+    animation: appear 1s ease;
+}
+
+.profile-box {
+    display: flex;
+    justify-content: center;
+}
+
+.profile {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid purple;
+    box-shadow: 0 5px 20px grey;
+    transition: 0.4s;
+}
+
+.profile:hover {
+    transform: scale(1.1);
+    border-radius: 20%;
+    box-shadow: 0 10px 25px purple;
+}
+
+.about-content {
+    text-align: left;
+}
+
+#about h2 {
+    background-color: grey;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 28px;
+    transition: 0.3s;
+}
+
+#about h2:hover {
+    transform: scale(1.03);
+    box-shadow: 0 5px 10px grey;
+}
+
+#about h3 {
+    color: purple;
+    font-size: 25px;
+}
+
+p {
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+p:hover {
+    background-color: lightblue;
+    transform: translateX(10px);
+    box-shadow: 0 3px 8px grey;
+}
+
+p b {
+    font-size: 20px;
+    color: purple;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+nav a:focus {
+    outline: 3px solid black;
+    outline-offset: 3px;
+}
+
+@media (max-width: 700px) {
+
+    #about {
+        grid-template-columns: 1fr;
+        width: 95%;
+    }
+
+    .about-content {
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+}
+
+</style>
+</body>
+</html>
